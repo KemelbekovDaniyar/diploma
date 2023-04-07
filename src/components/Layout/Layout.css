@@ -4,6 +4,13 @@
   color: #f1f1f1;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #595858;
+}
+
 .Layout {
   display: grid;
   grid-template-areas:
