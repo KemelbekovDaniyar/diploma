@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  color: #f1f1f1;
 }
 
 .Layout {
@@ -9,10 +10,10 @@
     "header header"
     "aside main"
     "footer footer";
-  grid-template-columns: 1fr 6fr;
-
-  max-width: 1200px;
+  grid-template-columns: 1fr 7fr;
+  max-width: 1300px;
   margin: 0 auto;
+  background-color: #101010;
 }
 
 .Layout header {
@@ -31,6 +32,12 @@
   grid-area: footer;
 }
 
+.About .q1 {
+  height: 100%;
+  float: right;
+  margin: 10px 30px 50px 30px;
+}
+
 
 aside {
   background-color: #fd5858;
@@ -42,4 +49,3 @@ footer {
   padding: 1rem 2rem;
   text-align: center;
 }
-

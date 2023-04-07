@@ -7,8 +7,10 @@ export default function Layout(props) {
   return (
     <div className="Layout">
       <header>
-        <img src={Logo} alt="logo" />
-        <Nav />
+        
+        <Nav>
+        <img src={Logo} alt="logo" className="logo" />
+        </Nav>
       </header>
       <aside>
         <nav>Nav</nav>
