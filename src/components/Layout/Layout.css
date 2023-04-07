@@ -13,7 +13,7 @@
   grid-template-columns: 1fr 7fr;
   max-width: 1300px;
   margin: 0 auto;
-  background-color: #101010;
+  background-color: #080404;
 }
 
 .Layout header {
@@ -40,7 +40,7 @@
 
 
 aside {
-  background-color: #fd5858;
+  background-color: #110f0e;
   padding: 1rem 2rem;
 }
 
