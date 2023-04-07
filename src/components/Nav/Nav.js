@@ -5,11 +5,11 @@ export default function Nav(props) {
   return (
     <div className="Nav">
       <nav className="topbar">
-        <div className="logo">
+        {/* <div className="logo">
           <NavLink to="/">
             {props.children}
           </NavLink>
-            </div>
+            </div> */}
         <ul>
           <li className="NavItem">
             <NavLink to="/">Home</NavLink>
