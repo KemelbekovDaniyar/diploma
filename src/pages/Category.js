@@ -1,4 +1,5 @@
 import { useMatch } from "react-router";
+import NotFound from "./NotFound";
 
 export default function Category(props) {
   const { params } = useMatch("/categories/:slug");
@@ -13,6 +14,10 @@ export default function Category(props) {
   const category = categories.find(
     (category) => category.slug === params.slug
   );
+
+  if (!category) {
+    return <NotFound />;
+  }
 
   return (
     <div className="Category">
