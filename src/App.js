@@ -15,7 +15,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/deliver" element={<Deliver />} />
-            <Route path="/category/:slug" element={<Category />} />
+            <Route path="/categories/:slug" element={<Category />} />
           </Routes>
       </Layout>
     </div>
