@@ -5,18 +5,21 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Deliver from "./pages/Deliver";
 import Category from "./pages/Category";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <div className="App">
       <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/deliver" element={<Deliver />} />
-            <Route path="/categories/:slug" element={<Category />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/deliver" element={<Deliver />} />
+          <Route path="/categories/:slug" element={<Category />} />
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </Layout>
     </div>
   );
