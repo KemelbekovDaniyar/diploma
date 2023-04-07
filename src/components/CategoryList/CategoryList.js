@@ -3,7 +3,6 @@ import "./CategoryList.css";
 
 export default function CategoryList(props) {
   const categories = [
-    { name: "All", id: "all", slug: "in-containers" },
     { name: "Guitars", id: "guitars", slug: "in-cones" },
     { name: "Basses", id: "basses", slug: "classic" },
     { name: "Drums", id: "drums", slug: "in-bags" },
