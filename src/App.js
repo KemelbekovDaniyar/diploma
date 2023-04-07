@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Deliver from "./pages/Deliver";
+import Category from "./pages/Category";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/deliver" element={<Deliver />} />
+            <Route path="/category/:slug" element={<Category />} />
           </Routes>
       </Layout>
     </div>
