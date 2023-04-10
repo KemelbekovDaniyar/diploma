@@ -7,6 +7,9 @@ export default function CategoryList(props) {
     { name: "Basses", id: "basses", slug: "classic" },
     { name: "Drums", id: "drums", slug: "in-bags" },
     { name: "Keyboards", id: "keyboards", slug: "in-bags" },
+    { name: "Accessories", id: "accessories", slug: "in-bags"},
+    { name: "Other", id: "other", slug: "in-bags"},
+    { name: "All", id: "all", slug: "in-bags"}
   ];
 
   const output = categories.map((category) => (
