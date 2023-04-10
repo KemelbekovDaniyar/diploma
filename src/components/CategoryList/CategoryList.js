@@ -22,8 +22,10 @@ export default function CategoryList() {
 
 
   const output = сategoryList.map((category) => (
-    <li className="CategoryItem" key={category.id}>
-      <NavLink to={"/categories/" + category.slug} > {category.name}</NavLink>
+    <li key={category.id}>
+      <NavLink to={`/categories/${category.slug}`}>
+        {category.name}
+      </NavLink>
     </li>
   ));
 
