@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  color: #f1f1f1;
 }
 
 body {
@@ -15,9 +14,9 @@ body {
   display: grid;
   grid-template-areas:
     "header header"
-    "aside main"
+    "main aside"
     "footer footer";
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 7fr 2fr;
   max-width: 1300px;
   margin: 0 auto;
   background-color: #080404;
@@ -38,6 +37,7 @@ body {
 
 .Layout main {
   grid-area: main;
+  background-color: #f1f1f1;
 }
 
 .Layout footer {
