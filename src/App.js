@@ -34,6 +34,7 @@ function App() {
 
   return (
     <div className="App">
+      <AppContext.Provider value={{ categories }}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,6 +46,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
+      </AppContext.Provider>
     </div>
   );
 }
