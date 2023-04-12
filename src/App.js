@@ -8,14 +8,17 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection } from "./firebase";
+import { categoryCollection, productsCollection } from "./firebase";
 
 export const AppContext = createContext({
   categories: [],
+  products: [],
 });
 
 function App() {
-  const [ categories, setCategories ] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
+
   useEffect(() => {
     getDocs(categoryCollection)
       .then(({ docs }) => {
@@ -27,12 +30,25 @@ function App() {
           }))
         );
       });
+
+    getDocs(productsCollection)
+      .then(({ docs }) => {
+        console.log(docs);
+        setProducts(
+          docs.map((doc) => ({
+            ...doc.data(),
+            id: doc.id,
+          }))
+        );
+      }
+      )
+
   }, []);
 
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories }}>
+      <AppContext.Provider value={{ categories, products }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />

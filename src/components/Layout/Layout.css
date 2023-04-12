@@ -19,7 +19,7 @@ body {
   grid-template-columns: 7fr 2fr;
   max-width: 1300px;
   margin: 0 auto;
-  background-color: #080404;
+  background-color: #370F0F;
 }
 
 .Layout header {
@@ -60,7 +60,7 @@ aside {
 }
 
 footer {
-  background-color: #080404;
+  background-color: #370F0F;
   padding: 1rem 2rem;
   text-align: center;
 }

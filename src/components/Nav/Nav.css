@@ -9,7 +9,8 @@
 }
 
 .Nav .NavItem a:hover {
-  background-color: #2e2525;
+  background-color: #ffffff;
+  color: #370F0F;
 }
 
 .topbar {
@@ -17,7 +18,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #080404;
+  background-color: #370F0F;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
