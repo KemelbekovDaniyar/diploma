@@ -12,20 +12,18 @@ import { categoryCollection } from "./firebase";
 
 export const AppContext = createContext({
   categories: [],
-})
+});
 
 function App() {
-  const { categories, setCategories } = useState([
-
-  ]);
-
+  const [ categories, setCategories ] = useState([]);
   useEffect(() => {
     getDocs(categoryCollection)
       .then(({ docs }) => {
+        console.log(docs);
         setCategories(
           docs.map((doc) => ({
-            id: doc.id,
             ...doc.data(),
+            id: doc.id,
           }))
         );
       });
@@ -42,7 +40,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/deliver" element={<Deliver />} />
             <Route path="/categories/:slug" element={<Category />} />
-
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
