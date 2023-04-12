@@ -5,10 +5,12 @@ export default function Category() {
   const { params } = useMatch("/categories/:slug");
 
   const categories = [
-    { name: "Guitars", id: "guitars", slug: "guitars" },
-    { name: "Basses", id: "basses", slug: "basses" },
-    { name: "Drums", id: "drums", slug: "drums" },
-    { name: "Keyboards", id: "keyboards", slug: "keyboards" },
+    { id: 1, name: "Guitars", slug: "guitars" },
+    { id: 2, name: "Audio & Recording", slug: "audio-recording" },
+    { id: 3, name: "Accessories", slug: "accessories" },
+    { id: 4, name: "Keyboards and pianos", slug: "keyboards-pianos" },
+    { id: 5, name: "Orchestral Instruments", slug: "orchestral-instruments" },
+    { id: 6, name: "Drums and percussion", slug: "drums-percussion" },
   ];
 
   const category = categories.find(
