@@ -21,31 +21,31 @@ function App() {
 
   useEffect(() => {
     getDocs(categoryCollection)
-    .then(({ docs }) => {
-      setCategories(
-        docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }))
-      );
-    });
+      .then(({ docs }) => {
+        setCategories(
+          docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }))
+        );
+      });
   }, []);
 
 
   return (
     <div className="App">
       <AppContext.Provider value={{ categories }}>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/deliver" element={<Deliver />} />
-          <Route path="/categories/:slug" element={<Category />} />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/deliver" element={<Deliver />} />
+            <Route path="/categories/:slug" element={<Category />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
       </AppContext.Provider>
     </div>
   );
