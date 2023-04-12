@@ -1,14 +1,14 @@
 import { useMatch } from "react-router";
 import NotFound from "./NotFound";
 
-export default function Category(props) {
+export default function Category() {
   const { params } = useMatch("/categories/:slug");
 
   const categories = [
-    { name: "Guitars", id: "guitars", slug: "in-cones" },
-    { name: "Basses", id: "basses", slug: "classic" },
-    { name: "Drums", id: "drums", slug: "in-bags" },
-    { name: "Keyboards", id: "keyboards", slug: "in-bags" },
+    { name: "Guitars", id: "guitars", slug: "guitars" },
+    { name: "Basses", id: "basses", slug: "basses" },
+    { name: "Drums", id: "drums", slug: "drums" },
+    { name: "Keyboards", id: "keyboards", slug: "keyboards" },
   ];
 
   const category = categories.find(
