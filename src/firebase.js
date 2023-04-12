@@ -21,4 +21,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Export collections
-export const categories = collection(db, "categories");
+export const categoryCollection = collection(db, "categories");
