@@ -7,8 +7,8 @@ export default function ProductList() {
   const { products } = useContext(AppContext);
 
   const output = products.map(products => (
-    <div>
-      <img src={products.image} alt={products.name} />
+    <div className="BoxList">
+      <img src={products.picture} alt={products.name} />
       <NavLink to={'/products/' + products.slug}>
         {products.name}
       </NavLink>
