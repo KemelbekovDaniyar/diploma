@@ -64,3 +64,15 @@ footer {
   padding: 1rem 2rem;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .Layout {
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      
+      "footer";
+    grid-template-columns: 1fr;
+  }
+}
