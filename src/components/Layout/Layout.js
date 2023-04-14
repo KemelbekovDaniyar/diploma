@@ -12,9 +12,9 @@ export default function Layout(props) {
           <Logo />
           <Nav />
         </div>
-        <Header />
-
-
+        <div className="header">
+          <Header />
+        </div>
       </header>
       <aside>
         <CategoryList />
