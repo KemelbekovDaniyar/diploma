@@ -2,7 +2,7 @@ import Nav from "../Nav/Nav";
 import "./Layout.css"
 import Logo from "../Logo/Logo";
 import CategoryList from "../CategoryList/CategoryList";
-import Header from "../Header/Header";
+import Carousel from "../Carousel/Carousel";
 
 export default function Layout(props) {
   return (
@@ -13,14 +13,14 @@ export default function Layout(props) {
           <Nav />
         </div>
         <div className="header">
-          <Header />
+            <Carousel />
         </div>
-      </header>
+      </header >
       <aside>
         <CategoryList />
       </aside>
       <main>{props.children}</main>
       <footer>Footer</footer>
-    </div>
+    </div >
   );
 }
