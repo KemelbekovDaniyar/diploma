@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
-import "./CartList.css"
+import "./CartList.css";
 
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
@@ -11,6 +11,12 @@ export default function CartList() {
       ...cart,
       [product.id]: qty,
     });
+  }
+
+  function onRemoveClick(product) {
+    const newCart = { ...cart };
+    delete newCart[product.id];
+    setCart(newCart);
   }
 
   const productIds = Object.keys(cart);
@@ -26,9 +32,11 @@ export default function CartList() {
           value={cart[product.id]}
           min={1}
           onChange={(event) => onQuantityChange
-          (product, +event.target.value)} />
+            (product, +event.target.value)} />
         <span>{cart[product.id] * product.price} $</span>
-        <button>Remove</button>
+        <button
+          onClick={() => onRemoveClick(product)}
+        >Remove</button>
       </div>
     ));
 
