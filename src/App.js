@@ -56,8 +56,8 @@ function App() {
       <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
-            <Route path="/" element={<Cart />} />
             <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/deliver" element={<Deliver />} />
@@ -68,7 +68,7 @@ function App() {
         </Layout>
       </AppContext.Provider>
     </div>
-      );
+  );
 }
 
-      export default App;
+export default App;
