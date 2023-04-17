@@ -10,6 +10,7 @@ import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
 import { categoryCollection, productsCollection } from "./firebase";
 import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 
 export const AppContext = createContext({
   categories: [],
@@ -55,6 +56,7 @@ function App() {
       <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
+            <Route path="/" element={<Cart />} />
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
