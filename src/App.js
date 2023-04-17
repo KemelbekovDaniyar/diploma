@@ -14,11 +14,14 @@ import Product from "./pages/Product";
 export const AppContext = createContext({
   categories: [],
   products: [],
+  card: [],
+  setCard: () => {},
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [card, setCard] = useState([]);
 
   useEffect(() => {
     getDocs(categoryCollection)
@@ -49,7 +52,7 @@ function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products }}>
+      <AppContext.Provider value={{ categories, products, card, setCard }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -58,7 +61,6 @@ function App() {
             <Route path="/deliver" element={<Deliver />} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="*" element={<NotFound />} />
-
             <Route path="/products/:slug" element={<Product />} />
           </Routes>
         </Layout>
