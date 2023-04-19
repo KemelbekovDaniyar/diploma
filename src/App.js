@@ -16,13 +16,19 @@ export const AppContext = createContext({
   categories: [],
   products: [],
   cart: {},
-  setCart: () => {},
+  setCart: () => { },
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState(() => {
+    return JSON.parse(localStorage.getItem("cart")) || {};
+  });
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   useEffect(() => {
     getDocs(categoryCollection)
