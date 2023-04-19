@@ -9,6 +9,10 @@ export default function OrderForm() {
   const { cart, setCart } = useContext(AppContext);
   const navigate = useNavigate();
 
+  if (Object.keys(cart).length === 0) {
+    return <h2>Cart is empty</h2>;
+  }
+
   function onFormSubmit(event) {
     event.preventDefault();
 
