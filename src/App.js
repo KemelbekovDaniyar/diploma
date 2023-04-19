@@ -11,6 +11,7 @@ import { getDocs } from "firebase/firestore/lite";
 import { categoryCollection, productsCollection } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
+import ThankYou from "./pages/ThankYou";
 
 export const AppContext = createContext({
   categories: [],
@@ -70,6 +71,7 @@ function App() {
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/products/:slug" element={<Product />} />
+            <Route path="/thank-you" element={<ThankYou />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
