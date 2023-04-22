@@ -5,32 +5,40 @@ import piano from '../assets/Piano.png';
 export default function Home() {
   return (
     <div className="Home">
-      <div className="guitar">
-        <div className="guitar__title">
-          <p>Fender American</p>
-          <span>Only: </span>
-          <span>999$</span>
-          <button>Buy</button>
+      <div className="stocks">
+        <div className="guitar">
+          <div className="guitar__box">
+            <div className="guitar__title">
+              <p>Fender American</p>
+              <span>Only: </span>
+              <span>999$</span>
+              <button>Buy</button>
+            </div>
+            <img src={guitar} alt="guitar" />
+          </div>
         </div>
-        <img src={guitar} alt="guitar" />
-      </div>
-      <div className="drum">
-        <img src={drum} alt="drum" />
-        <div className="drum__title">
-          <p>Yamaha</p>
-          <span>Only: </span>
-          <span>999$</span>
-          <button>Buy</button>
+        <div className="drum">
+          <div className="drum__box">
+            <img src={drum} alt="drum" />
+            <div className="drum__title">
+              <p>Yamaha</p>
+              <span>Only: </span>
+              <span>999$</span>
+              <button>Buy</button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="piano">
-        <div className="piano__title">
-          <p>Yamaha</p>
-          <span>Only: </span>
-          <span>999$</span>
-          <button>Buy</button>
+        <div className="piano">
+          <div className="piano__box">
+            <div className="piano__title">
+              <p>Yamaha</p>
+              <span>Only: </span>
+              <span>999$</span>
+              <button>Buy</button>
+            </div>
+            <img src={piano} alt="piano" />
+          </div>
         </div>
-        <img src={piano} alt="piano" />
       </div>
     </div>
   );

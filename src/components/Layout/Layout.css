@@ -63,7 +63,7 @@ body {
   text-align: center;
 }
 
-.Home {
+.stocks {
   display: grid;
   grid-template-areas:
     "guitar drum"
@@ -73,16 +73,53 @@ body {
   padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
+  height: 500px;
+}
+
+.stocks button {  
+  background-color: #222;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 0 0 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;;
+}
+
+.stocks button:active {
+  background-color: #222;
+  color: white;
+}
+
+.stocks button:focus {
+  background-color: #222;
+  color: white;
+}
+
+.stocks button:hover {
+  background-color: white;
+  color: #222;
 }
 
 .Home .guitar {
   grid-area: guitar;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   width: 100%;
   background-color: #e8e8e8;
   height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .guitar .guitar__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .Home .guitar img {
@@ -91,12 +128,19 @@ body {
 
 .Home .piano {
   grid-area: piano;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   width: 100%;
   background-color: #e8e8e8;
   height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .piano .piano__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .Home .piano img {
@@ -108,6 +152,10 @@ body {
   background-color: #e8e8e8;
   width: 100%;
   height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Home .drum img {
