@@ -116,4 +116,18 @@ footer {
       "footer";
     grid-template-columns: 1fr;
   }
+
+  aside {
+    display: none;
+  }
+
+  .About .q1 {
+    height: 100%;
+    float: none;
+    margin: 10px 30px 50px 30px;
+  }
+
+  .NotFound {
+    text-align: center;
+  }
 }
