@@ -18,6 +18,9 @@ export default function Nav(props) {
           <li className="NavItem">
             <NavLink to="/deliver">Deliver</NavLink>
           </li>
+          <li className="NavItem">
+            <NavLink to="/orders">Orders</NavLink>
+          </li>
         </ul>
       </nav>
     </div>

@@ -8,15 +8,17 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, onAuthChange, productsCollection } from "./firebase";
+import { categoryCollection, onAuthChange, ordersCollection, productsCollection } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
+import Orders from "./pages/Orders";
 
 export const AppContext = createContext({
   categories: [],
   products: [],
   cart: {},
+  orders: [],
   setCart: () => { },
 
   user: null,
@@ -28,6 +30,7 @@ function App() {
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
+  const [orders, setOrders] = useState([]);
 
   const [user, setUser] = useState(null);
 
@@ -40,6 +43,17 @@ function App() {
       .then(({ docs }) => {
         console.log(docs);
         setCategories(
+          docs.map((doc) => ({
+            ...doc.data(),
+            id: doc.id,
+          }))
+        );
+      });
+
+      getDocs(ordersCollection)
+      .then(({ docs }) => {
+        console.log(docs);
+        setOrders(
           docs.map((doc) => ({
             ...doc.data(),
             id: doc.id,
@@ -65,10 +79,9 @@ function App() {
 
   }, []);
 
-
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -80,6 +93,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/orders" element={<Orders />} />
           </Routes>
         </Layout>
       </AppContext.Provider>

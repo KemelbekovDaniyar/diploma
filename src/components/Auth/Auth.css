@@ -1,0 +1,30 @@
+.Auth span {
+  display: block;
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.Auth {
+  margin-left: 20px;
+}
+
+.Auth button {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Auth button:hover {
+  background-color: #222;
+  color: white;
+}

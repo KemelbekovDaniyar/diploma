@@ -63,6 +63,117 @@ body {
   text-align: center;
 }
 
+/* .stocks {
+  display: grid;
+  grid-template-areas:
+    "guitar drum"
+    "piano drum";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 500px;
+} */
+
+.stocks button {  
+  background-color: #222;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 0 0 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;;
+}
+
+.stocks button:active {
+  background-color: #222;
+  color: white;
+}
+
+.stocks button:focus {
+  background-color: #222;
+  color: white;
+}
+
+.stocks button:hover {
+  background-color: white;
+  color: #222;
+}
+
+.Home .guitar {
+  grid-area: guitar;
+  width: 100%;
+  background-color: #e8e8e8;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .guitar .guitar__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Home .guitar img {
+  width: 285px;
+}
+
+.Home .piano {
+  grid-area: piano;
+  width: 100%;
+  background-color: #e8e8e8;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .piano .piano__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Home .piano img {
+  width: 285px;
+}
+
+.Home .drum {
+  grid-area: drum;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .drum img {
+  width: 285px;
+}
+
+.Home .drum source {
+}
+
+.Home video {
+  width: 100%;
+  height: 100%;
+}
+
+.Category {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 aside {
   padding: 1rem 2rem;
   text-align: center;
