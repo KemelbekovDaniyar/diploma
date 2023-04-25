@@ -68,6 +68,11 @@ body {
   margin: 0;
 }
 
+.Home .lander {
+  padding: 40px 0 80px 0;
+  text-align: center;
+}
+
 
 aside {
   padding: 1rem 2rem;

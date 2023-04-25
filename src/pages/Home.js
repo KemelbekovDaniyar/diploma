@@ -1,7 +1,15 @@
+import video from "../assets/video.mp4";
+
 export default function Home() {
   return (
     <div className="Home">
-      <h1>Home</h1>
+      <div className="lander">
+        <div className="video">
+          <video autoPlay muted loop>
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>
+      </div>
     </div>
   );
 }
