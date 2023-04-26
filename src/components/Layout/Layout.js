@@ -4,8 +4,6 @@ import Logo from "../Logo/Logo";
 import CategoryList from "../CategoryList/CategoryList";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
-import Home from "../../pages/Home";
-import Video from "../Video/Video";
 
 export default function Layout(props) {
   return (
