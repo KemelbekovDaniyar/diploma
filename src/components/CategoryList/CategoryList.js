@@ -6,9 +6,15 @@ export default function CategoryList() {
   const { categories } = useContext(AppContext);
 
   const output = categories.map((category) => (
+    // <li key={category.id}>
+    //   <NavLink to={`/categories/${category.slug}`}>
+    //     {category.name}
+    //   </NavLink>
+    // </li>
     <li key={category.id}>
       <NavLink to={`/categories/${category.slug}`}>
-        {category.name}
+        <img src={category.picture} alt={category.name} />
+        <span>{category.name}</span>
       </NavLink>
     </li>
   ));

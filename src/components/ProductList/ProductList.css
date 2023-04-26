@@ -23,6 +23,11 @@
   background-color: #f9f9f9;
 }
 
+.BoxList:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
 .ProductList {
   display: flex;
   flex-wrap: wrap;
