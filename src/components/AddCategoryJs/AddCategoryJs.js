@@ -8,7 +8,7 @@ export default function AddCategoryJs() {
   const {user} = useContext(AppContext);
   const [category, setCategory] = useState("");
 
-  if (!user || !user.admin) {
+  if (!user || !user.isAdmin) {
     return null;
   }
 
@@ -26,7 +26,7 @@ export default function AddCategoryJs() {
 
     addDoc(categoryCollection, {
       name: name,
-      slug: name.replace(" ", "-").toLowerCase(),
+      slug: name.replaceAll(" ", "-").toLowerCase(),
     }).then(() => {
       setCategory("");
     });
