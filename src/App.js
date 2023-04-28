@@ -8,7 +8,7 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
-import { onAuthChange, onCategoriesLoad, ordersCollection,  } from "./firebase";
+import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad, ordersCollection,  } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
@@ -41,16 +41,7 @@ function App() {
   useEffect(() => {
     onCategoriesLoad(setCategories);
 
-    getDocs(ordersCollection)
-      .then(({ docs }) => {
-        console.log(docs);
-        setOrders(
-          docs.map((doc) => ({
-            ...doc.data(),
-            id: doc.id,
-          }))
-        );
-      });
+    onOrdersLoad(setOrders);
 
     onProductsLoad(setProducts);
 
