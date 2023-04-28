@@ -41,3 +41,13 @@ export const onCategoriesLoad = (callback) =>
       }))
     )
   );
+
+export const onProductsLoad = (callback) =>
+  onSnapshot(productsCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
