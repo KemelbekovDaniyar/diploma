@@ -1,34 +1,36 @@
-import { useState } from "react"
-import './AddCategoryJs.css'
-import { addDoc } from "firebase/firestore/lite"
-import { categoryCollection } from "../../firebase"
+import { useContext, useState } from "react";
+import "./AddCategoryJs.css";
+import { addDoc } from "firebase/firestore";
+import { categoryCollection } from "../../firebase";
+import { AppContext } from "../../App";
 
 export default function AddCategoryJs() {
-  const [category, setCategory] = useState('')
+  const {user} = useContext(AppContext);
+  const [category, setCategory] = useState("");
+
+  if (!user || !user.admin) {
+    return null;
+  }
 
   function onChangeCategory(event) {
-    setCategory(event.target.value)
+    setCategory(event.target.value);
   }
 
   function onAddCategory() {
     const name = category.trim();
 
     if (name.length < 5) {
-      alert('Category name must be longer than 5 characters')
-      return
+      alert("Category name must be longer than 5 characters");
+      return;
     }
 
     addDoc(categoryCollection, {
       name: name,
-      slug: name
-        .replace(" ", '-')
-        .toLowerCase(),
+      slug: name.replace(" ", "-").toLowerCase(),
     }).then(() => {
-      setCategory('')
-    })
+      setCategory("");
+    });
   }
-
-
 
   return (
     <div className="AddCategoryJs">
@@ -36,8 +38,9 @@ export default function AddCategoryJs() {
         type="text"
         placeholder="Category name"
         onChange={onChangeCategory}
-        value={category} />
+        value={category}
+      />
       <button onClick={onAddCategory}>Add category</button>
     </div>
-  )
+  );
 }
