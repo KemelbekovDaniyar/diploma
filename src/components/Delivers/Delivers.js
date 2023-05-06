@@ -1,5 +1,8 @@
 import React from 'react';
 import './Delivers.css';
+import Clock from "../../assets/clock-icon.png";
+import Shipping from "../../assets/shipping-icon.png";
+import World from "../../assets/world-icon.png";
 
 const Delivers = () => {
   return (
@@ -7,21 +10,21 @@ const Delivers = () => {
       <h2 className="delivers-heading">Fast and Reliable Delivery</h2>
       <div className="delivery-info">
         <div className="delivery-option">
-          <img src="shipping-icon.png" alt="Shipping Icon" className="delivery-icon" />
+          <img src={Shipping} alt="Shipping Icon" className="delivery-icon" />
           <h3 className="delivery-option-title">Free Shipping</h3>
           <p className="delivery-option-description">
             We offer free shipping on all orders, ensuring that you receive your musical instruments without any additional cost. Our dedicated shipping partners guarantee reliable and secure delivery.
           </p>
         </div>
         <div className="delivery-option">
-          <img src="clock-icon.png" alt="Clock Icon" className="delivery-icon" />
+          <img src={Clock} alt="Clock Icon" className="delivery-icon" />
           <h3 className="delivery-option-title">Quick Delivery</h3>
           <p className="delivery-option-description">
             With our efficient delivery service, your musical instruments will arrive at your doorstep in record time. We prioritize speed without compromising on the safety of your items. Track your package with our real-time delivery updates.
           </p>
         </div>
         <div className="delivery-option">
-          <img src="world-icon.png" alt="World Icon" className="delivery-icon" />
+          <img src={World} alt="World Icon" className="delivery-icon" />
           <h3 className="delivery-option-title">Worldwide Shipping</h3>
           <p className="delivery-option-description">
             No matter where you are, we deliver worldwide. From local shipments to international orders, our shipping network covers the globe. Experience the convenience of ordering your favorite musical instruments from anywhere and receiving them hassle-free.
