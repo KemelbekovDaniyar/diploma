@@ -9,8 +9,9 @@
 }
 
 .Nav .NavItem a:hover {
-  background-color: #ffffff;
-  color: #370F0F;
+  transform: translateX(5px);
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
 }
 
 .topbar {
@@ -27,4 +28,9 @@
 
 .topbar li {
   margin-left: 1rem;
+}
+
+.Nav ul li:hover {
+  transform: translateX(5px);
+  transition: all 0.2s ease-in-out;
 }
