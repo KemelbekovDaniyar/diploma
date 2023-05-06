@@ -44,6 +44,7 @@ export default function CartList() {
 
   return (
     <div className="CartList">
+      <h1>Cart</h1>
       {output}
     </div>
   )
