@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../App";
 import { useMatch } from "react-router";
 import NotFound from "./NotFound";
+import AddToCart from "../components/AddToCart/AddToCart";
 
 export default function Product() {
   const { products } = useContext(AppContext);
@@ -18,6 +19,9 @@ export default function Product() {
       <h1>{product.name}</h1>
       <img src={product.picture} alt={product.name} />
       <span>{product.price}$</span>
+      <AddToCart product={product} />
+      <p className="info">{product.info}</p>
+      
     </div>
   )
 }
