@@ -3,16 +3,12 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import AddCategoryJs from "../AddCategoryJs/AddCategoryJs";
 import DeleteCategory from "../DeleteCategory/DeleteCategory";
+import "./CategoryList.css";
 
 export default function CategoryList() {
   const { categories } = useContext(AppContext);
 
   const output = categories.map((category) => (
-    // <li key={category.id}>
-    //   <NavLink to={`/categories/${category.slug}`}>
-    //     {category.name}
-    //   </NavLink>
-    // </li>
     <li key={category.id}>
       <NavLink to={`/categories/${category.slug}`}>
         <img src={category.picture} alt={category.name} />

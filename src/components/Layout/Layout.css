@@ -16,7 +16,6 @@ body {
   display: grid;
   grid-template-areas:
     "header"
-    "aside"
     "main"
     "footer";
   grid-template-columns: 7fr;
@@ -38,10 +37,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.Layout aside {
-  grid-area: aside;
 }
 
 .Layout main {
@@ -105,57 +100,6 @@ body {
 .Home .video {
   text-align: center;
   margin: 40px 0 80px 0;
-}
-
-
-aside {
-  padding: 1rem 2rem;
-  text-align: center;
-}
-
-aside ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-aside li {
-  margin: 0.5rem;
-  display: inline;
-  width: 150px;
-  height: 250px;
-}
-
-aside a {
-  text-decoration: none;
-  color: #000;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-aside img {
-  max-width: 150px;
-  width: 100%;
-  height: 225px;
-  border-radius: 10px;
-}
-
-aside img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  border-radius: 10px;
-  transform: scale(1.1);
-}
-
-aside img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  border-radius: 10px;
 }
 
 footer {

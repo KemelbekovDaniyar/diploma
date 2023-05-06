@@ -1,7 +1,6 @@
 import Nav from "../Nav/Nav";
 import "./Layout.css"
 import Logo from "../Logo/Logo";
-import CategoryList from "../CategoryList/CategoryList";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
 import { useState } from "react";
@@ -28,9 +27,6 @@ export default function Layout(props) {
           </div>
         </div>
       </header >
-      <aside>
-        <CategoryList />
-      </aside>
       <main>
         {props.children}
       </main>
