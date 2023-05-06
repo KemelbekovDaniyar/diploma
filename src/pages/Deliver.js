@@ -1,7 +1,9 @@
+import Delivers from "../components/Delivers/Delivers";
+
 export default function Deliver() {
   return (
     <div className="Deliver">
-      <h1>Deliver</h1>
+      <Delivers />
     </div>
   );
 }
