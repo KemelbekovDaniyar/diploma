@@ -20,7 +20,7 @@ const Contacts = () => {
         </p>
       </div>
       <p className="contact-message">
-        We would love to hear from you! Reach out to us with any questions or feedback you may have. Our team of music enthusiasts is here to assist you.
+        Let the rhythm of your thoughts reach us! We're just a call, an email, or a visit away. Whether you have a question, need assistance, or simply want to share your musical journey, our dedicated team of melody maestros is here to amplify your experience.
       </p>
       <div className="contact-action">
         <button className="contact-button">Contact Us</button>
