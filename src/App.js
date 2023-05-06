@@ -7,7 +7,7 @@ import Deliver from "./pages/Deliver";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
-import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad, } from "./firebase";
+import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad,  } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
@@ -33,6 +33,7 @@ function App() {
 
   const [user, setUser] = useState(null);
 
+
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
@@ -57,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders,  }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />

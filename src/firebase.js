@@ -32,6 +32,7 @@ export const signIn = () => signInWithPopup(auth, provider);
 export const signOff = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
 
+
 export const onCategoriesLoad = (callback) =>
   onSnapshot(categoryCollection, (snapshot) =>
     callback(
