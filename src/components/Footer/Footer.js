@@ -1,7 +1,6 @@
-import React from 'react';
 import './Footer.css';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -9,20 +8,20 @@ const Footer = () => {
           <h4 className="footer-heading">Categories</h4>
           <ul className="footer-list">
             <li>Guitars</li>
-            <li>Keyboards</li>
-            <li>Drums</li>
-            <li>Violins</li>
-            <li>Microphones</li>
+            <li>Audio & Recording</li>
+            <li>Keyboards and pianos</li>
+            <li>Orchestral Instruments</li>
+            <li>Drums and percussion</li>
           </ul>
         </div>
         <div className="footer-column">
           <h4 className="footer-heading">Menus</h4>
           <ul className="footer-list">
-            <li>About Us</li>
-            <li>Shipping</li>
-            <li>Returns</li>
-            <li>FAQ</li>
-            <li>Contact Us</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Deliver</li>
+            <li>Orders</li>
           </ul>
         </div>
         <div className="footer-column">
