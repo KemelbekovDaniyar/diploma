@@ -1,18 +1,25 @@
 import { NavLink } from 'react-router-dom';
+import { useContext } from "react";
+import { AppContext } from "../../App";
 import './Footer.css';
 
 function Footer() {
+  const { categories } = useContext(AppContext);
+
+  const output = categories.map((category) => (
+    <li key={category.id}>
+      <NavLink to={`/categories/${category.slug}`}>
+        <span>{category.name}</span>
+      </NavLink>
+    </li>
+  ));
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
           <h4 className="footer-heading">Categories</h4>
           <ul className="footer-list">
-            <li>Guitars</li>
-            <li>Audio & Recording</li>
-            <li>Keyboards and pianos</li>
-            <li>Orchestral Instruments</li>
-            <li>Drums and percussion</li>
+            {output}  
           </ul>
         </div>
         <div className="footer-column">
