@@ -6,6 +6,7 @@ import Auth from "../Auth/Auth";
 import { useState } from "react";
 import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
+import Footer from "../Footer/Footer";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -30,7 +31,9 @@ export default function Layout(props) {
       <main>
         {props.children}
       </main>
-      <footer>Footer</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div >
   );
 }
