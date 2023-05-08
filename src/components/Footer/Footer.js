@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -17,11 +18,21 @@ function Footer() {
         <div className="footer-column">
           <h4 className="footer-heading">Menus</h4>
           <ul className="footer-list">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Deliver</li>
-            <li>Orders</li>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+            <li>
+              <NavLink to="/deliver">Deliver</NavLink>
+            </li>
+            <li>
+              <NavLink to="/orders">Orders</NavLink>
+            </li>
           </ul>
         </div>
         <div className="footer-column">
