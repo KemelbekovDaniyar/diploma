@@ -41,7 +41,6 @@ body {
 
 .Layout main {
   grid-area: main;
-  background-color: #ffffff;
 }
 
 .Layout footer {

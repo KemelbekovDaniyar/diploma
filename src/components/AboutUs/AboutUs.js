@@ -1,6 +1,7 @@
 import React from 'react';
-import './AboutUs.css'; // Import the CSS file for the component
-import MusicStore from "../../assets/music-store.jpg"; // Import the image file for the component
+import './AboutUs.css';
+import MusicStore from "../../assets/music-store.jpg";
+import Video from "../Video/Video";
 
 const AboutUs = () => {
   return (
@@ -21,10 +22,7 @@ const AboutUs = () => {
         </div>
         <div className="about-image">
           <div className="image-container">
-            <div className="image-overlay">
-              <p>Explore Our Collection</p>
-            </div>
-            <img src={MusicStore} alt="Music Store" />
+            <Video />
           </div>
         </div>
       </div>
