@@ -46,8 +46,8 @@ function Footer() {
           <h4 className="footer-heading">Contact</h4>
           <p>123 Music Street</p>
           <p>City, State</p>
-          <p>Phone: 123-456-7890</p>
-          <p>Email: info@musicstore.com</p>
+          <p>Phone: +996502019274</p>
+          <p>Email: kemelbekovdaniyar0@gmail.com</p>
         </div>
         <div className="footer-column">
           <h4 className="footer-heading">Cellular Networks</h4>

@@ -10,10 +10,10 @@ const Contacts = () => {
           <strong className="contact-label">Address:</strong> 123 Music Street, Cityville, State, Country
         </p>
         <p>
-          <strong className="contact-label">Phone:</strong> +1 123-456-7890
+          <strong className="contact-label">Phone:</strong> +996 502 01 92 74
         </p>
         <p>
-          <strong className="contact-label">Email:</strong> info@musicstore.com
+          <strong className="contact-label">Email:</strong> kemelbekovdaniyar0@gmail.com
         </p>
         <p>
           <strong className="contact-label">Working Hours:</strong> Monday to Friday, 9:00 AM - 6:00 PM
