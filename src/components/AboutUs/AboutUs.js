@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutUs.css';
-import MusicStore from "../../assets/music-store.jpg";
 import Video from "../Video/Video";
 
 const AboutUs = () => {
