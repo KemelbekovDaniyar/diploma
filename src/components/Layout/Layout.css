@@ -41,6 +41,7 @@ body {
 
 .Layout main {
   grid-area: main;
+  min-height: 100vh;
 }
 
 .Layout footer {
