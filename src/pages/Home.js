@@ -1,4 +1,5 @@
 import CategoryList from "../components/CategoryList/CategoryList";
+import Music from "../components/Music/Music";
 import Video from "../components/Video/Video";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="Home">
       <CategoryList />
       <Video />
+      <Music />
     </div>
   );
 }
