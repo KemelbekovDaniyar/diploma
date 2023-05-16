@@ -29,7 +29,11 @@
   transition: 0.5s;
 }
 
-.ProductList {
+.Categoryin {
+  margin-bottom: 100px;
+}
+
+.Productin {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
