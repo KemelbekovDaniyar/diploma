@@ -28,10 +28,12 @@ export default function ProductList({ category }) {
       <div className="Categoryin">
         <CategoryList />
       </div>
-      <h1>{category.name}</h1>
       <div className="Productin">
-        {output}
-        <AddProduct category={category} />
+        <h1>{category.name}</h1>
+        <div className="content">
+          {output}
+          <AddProduct category={category} />
+        </div>
       </div>
     </div>
   )
