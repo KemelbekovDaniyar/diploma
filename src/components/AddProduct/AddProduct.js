@@ -8,6 +8,7 @@ export default function AddProduct({ category }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
+  const [info, setInfo] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!user || !user.isAdmin) {
@@ -23,6 +24,9 @@ export default function AddProduct({ category }) {
   function onChangePicture(event) {
     const file = event.target.files[0];
     setPicture(file);
+  }
+  function onChangeInfo(event) {
+    setInfo(event.target.value);
   }
 
   function onFormSubmit(event) {
@@ -41,6 +45,7 @@ export default function AddProduct({ category }) {
           name: name,
           price: price,
           picture: pictureUrl,
+          info: info,
           slug: name.replaceAll(" ", "-").toLowerCase(),
         })
       )
@@ -88,6 +93,16 @@ export default function AddProduct({ category }) {
             type="file"
             name="picture"
             onChange={onChangePicture}
+            required
+          />
+        </label>
+        <label>
+          Info:
+          <input
+            type="text"
+            value={info}
+            name="info"
+            onChange={onChangeInfo}
             required
           />
         </label>
