@@ -15,7 +15,7 @@ function Footer() {
     </li>
   ));
   return (
-    <footer className="footer">
+    <footer className="footer container">
       <div className="footer-container">
         <div className="footer-column">
           <h4 className="footer-heading">Categories</h4>

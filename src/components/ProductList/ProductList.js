@@ -24,7 +24,7 @@ export default function ProductList({ category }) {
     ))
 
   return (
-    <div className="ProductList">
+    <div className="ProductList container">
       <div className="Categoryin">
         <CategoryList />
       </div>

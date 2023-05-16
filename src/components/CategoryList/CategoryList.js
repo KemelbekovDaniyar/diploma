@@ -21,7 +21,7 @@ export default function CategoryList() {
 
 
   return (
-    <div className="CategoryList">
+    <div className="CategoryList container">
       <h3>Categories</h3>
       <ul>{output}</ul>
       <AddCategoryJs />

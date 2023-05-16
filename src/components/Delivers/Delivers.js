@@ -6,7 +6,7 @@ import World from "../../assets/world-icon.png";
 
 const Delivers = () => {
   return (
-    <div className="delivers-container">
+    <div className="delivers-container container">
       <h2 className="delivers-heading">Fast and Reliable Delivery</h2>
       <div className="delivery-info">
         <div className="delivery-option">
