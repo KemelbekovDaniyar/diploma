@@ -1,0 +1,34 @@
+.Music {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Music .Music-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "info play"
+    "info who";
+}
+
+.Music .Music-container .info {
+  grid-area: info;
+  background-color: aliceblue;
+  width: 100%;
+  height: 100%;
+}
+
+.Music .Music-container .play {
+  grid-area: play;
+  background-color: aqua;
+  width: 100%;
+  height: 100px;
+}
+
+.Music .Music-container .who {
+  grid-area: who;
+  background-color: aquamarine;
+  width: 100%;
+  height: 100px;
+}
