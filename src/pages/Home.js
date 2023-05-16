@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="Home">
       <CategoryList />
-      <Video />
       <Music />
+      <Video />
     </div>
   );
 }
