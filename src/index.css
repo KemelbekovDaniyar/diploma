@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Product {
+  display: grid;
+  grid-template-areas: 
+    "hero info";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.Product .hero {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Product .info {
+  grid-area: info;
+}
+
+.Product h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.Product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Product img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Product span {
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Product p.info {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .Product {
+    grid-template-areas: 
+      "hero"
+      "info";
+    grid-template-columns: 1fr;
+  }
+
+  .Product h1 {
+    font-size: 20px;
+  }
+
+  .Product img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Product span {
+    font-size: 16px;
+  }
+
+  .Product p.info {
+    font-size: 14px;
+  }
+}
+
