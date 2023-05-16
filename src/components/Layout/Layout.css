@@ -6,6 +6,12 @@
   font-family: 'Playfair Display', serif;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
