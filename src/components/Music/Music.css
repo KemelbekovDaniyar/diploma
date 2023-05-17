@@ -14,23 +14,32 @@
 
 .Music .Music-container .info {
   grid-area: info;
-  background-color: aliceblue;
+  background-image: url("../../assets/whayguitars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 .Music .Music-container .play {
   grid-area: play;
-  background-color: aqua;
+  background-image: url("../../assets/string.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 
 .Music .Music-container .who {
   grid-area: who;
-  background-color: aquamarine;
+  background-image: url("../../assets/children.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 
 @media screen and (max-width: 888px) {
