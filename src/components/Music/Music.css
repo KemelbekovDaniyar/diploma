@@ -9,47 +9,30 @@
   grid-gap: 20px;
   grid-template-areas:
     "info play"
-    "info who";
-}
-
-.Music .Music-container .info {
-  grid-area: info;
-  width: 100%;
-  height: 400px;
 }
 
 .Music .Music-container img {
   width: 100%;
-  height: 100%;
+  height: 400px;
+}
+
+.Music-container .info {
+  grid-area: info;
+  width: 100%;
 }
 
 .Music .Music-container .play {
   grid-area: play;
-  background-image: url("../../assets/string.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
 }
 
-.Music .Music-container .who {
-  grid-area: who;
-  background-image: url("../../assets/children.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
 
 @media screen and (max-width: 888px) {
   .Music .Music-container {
     grid-template-columns: 1fr;
     grid-template-areas:
       "info"
-      "play"
-      "who";
+      "play";
 
     max-width: 400px;
     margin: 0 auto;
@@ -59,85 +42,122 @@
 
 
 
-
-
-/* Настройки маркированного списка */
-.hover-effect-scale {
-  list-style: none;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  padding: 0;
+/* Общие стили */
+*, *:after, *:before { 
+	box-sizing: border-box; 
 }
-
-.hover-effect-scale li {
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
-  margin: 0;
-  overflow: hidden;
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
 }
-
-/* Заголовок, текст и ссылка */
-.hover-effect-scale li h3 {
-  color: #fff;
-  margin: 5px;
+.clearfix:after { 
+	clear: both; 
 }
-
-.hover-effect-scale li p {
-  color: #fff;
-  margin: 5px;
-}
-
-.hover-effect-scale li a {
-  display: block;
-  text-decoration: none;
-  padding: 15px;
-  color: #fff;
-  background: #000;
-  border-radius: 5px;
-  margin: 0 auto;
-  transition: all 0.4s ease-in-out;
-}
-
-.hover-effect-scale li a:hover {
-  background: #454545;
-  color: #fff;
-}
-
-/* Выезжающий блок с текстом */
-.hover-effect-scale li>div {
-  width: 100%;
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
   height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #527c82;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
 }
 
-.hover-effect-scale li:hover>div {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
+/* Эффект при наведении */
+figure.effect-text-one img {
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 100px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.2);
 }
-
-.hover-effect-scale li div {
+figure.effect-text-one figcaption {
+	top: auto;
+	bottom: 0;
+	height: 50%;
+	text-align: left;
+}
+figure.effect-text-one h3,
+figure.effect-text-one p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+figure.effect-text-one h3 {
+	color: #f66d52 !important;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+figure.effect-text-one p {
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+  padding: 10px;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.35);
-  /* Фон блока при наведении */
-  transition: all 0.4s ease-in-out;
-  color: #fff;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;  
 }
-
-.hover-effect-scale li img {
-  transition: all 0.2s linear;
+figure.effect-text-one:hover img,
+figure.effect-text-one:hover p {
+	opacity: 1;
 }
-
-.hover-effect-scale li:hover img {
-  transform: scale(1.3);
+figure.effect-text-one:hover img,
+figure.effect-text-one:hover h3,
+figure.effect-text-one:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
-
-.hover-effect-scale li:hover div {
-  opacity: 1;
+figure.effect-text-one:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
 }
+     
