@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contacts.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Contacts = () => {
   return (
@@ -27,7 +27,7 @@ const Contacts = () => {
         <a class="btn-modal" href="#open-window-content">Contact</a>
         <div class="modal-overlay" id="open-window-content">
           <div class="open-window">
-            <h2>Сontact us</h2><a class="close" href="#" rel='noreferrer'>×</a>
+            <h2>Сontact us</h2><Link class="close" href="#" rel='noreferrer'>×</Link>
             <div class="modal-content-body">
               <div className="network-icons">
                 <a href='https://www.instagram.com/donch1kk/' target='_blank' rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="network-icon" viewBox="0 0 16 16">
