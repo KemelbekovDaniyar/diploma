@@ -68,3 +68,108 @@
     font-size: 18px;
   }
 }
+
+
+/* Кнопка */
+.btn-modal {
+  fcolor: #fff;
+  cursor: pointer;
+  line-height: 3rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #222;
+  transition: all 0.3s ease-out;
+}
+.btn-modal:hover {
+  background-color: #000;
+}
+
+/* Затемнение фона */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  height: 100%;
+  opacity: 0;
+}
+.modal-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Модаальное окно */
+.open-window {
+  margin: 70px auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 5px;
+  width: 90%;
+  position: relative;
+  transition: all 5s easeout;
+}
+.open-window h2 {
+  margin: 1em 0;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Кнопка закрыть */
+.open-window .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.open-window .close:hover {
+  color: #83bec5;
+}
+.open-window .modal-content-body {
+  overflow: auto;
+}
+.modal-content-body p{
+  text-align: justify;
+}
+::-webkit-scrollbar {
+  z-index: 30;
+  width: 5px;
+  height: 0;
+  y-index: hidden;
+}
+::-webkit-scrollbar-track {
+  background-color: #111;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2b2e33;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+}
+     
+
+.network-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.network-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.network-icon:hover {
+  color: #333;
+}
