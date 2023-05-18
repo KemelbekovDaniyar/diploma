@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import Video from "../Video/Video";
+import img from "../../assets/music-store.jpg"
 
 const AboutUs = () => {
   return (
@@ -21,7 +21,7 @@ const AboutUs = () => {
         </div>
         <div className="about-image">
           <div className="image-container">
-            <Video />
+            <img src={img} alt='' />
           </div>
         </div>
       </div>
