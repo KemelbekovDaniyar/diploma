@@ -11,10 +11,6 @@
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
   transition: background-color 0.3s;
 }
 
@@ -89,6 +85,8 @@
 @media screen and (max-width: 768px) {
   .CartItem {
     padding: 8px;
+    display: flex;
+    flex-direction: column;
   }
 
   .CartItem img {
