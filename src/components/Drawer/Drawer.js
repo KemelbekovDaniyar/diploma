@@ -1,6 +1,7 @@
 
 import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
+import Search from "../Search/Search";
 import "./Drawer.css"
 
 function Drawer({ open, toggle }) {
@@ -12,6 +13,7 @@ function Drawer({ open, toggle }) {
       <div className="content">
         <Logo />
         <Nav />
+        <Search />
       </div>
     </div>
   );

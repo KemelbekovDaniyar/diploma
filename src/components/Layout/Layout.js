@@ -7,6 +7,7 @@ import { useState } from "react";
 import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
 import Footer from "../Footer/Footer";
+import Search from "../Search/Search";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -21,7 +22,8 @@ export default function Layout(props) {
           <NavToggle callback={toggleDrawer} />
           <Logo />
           <Nav />
-          <Drawer open={drawerOpen} toggle={toggleDrawer} />
+          <Drawer open={drawerOpen} toggle={toggleDrawer} />\
+          <Search />
           <div>
             <CartLink />
             <Auth />
