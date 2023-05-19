@@ -1,6 +1,7 @@
 .Music {
   max-width: 1200px;
   margin: 0 auto;
+	margin-top: 30px;
 }
 
 .Music .Music-container {
@@ -8,7 +9,8 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas:
-    "info play"
+    "info play";
+	margin-top: 100px;
 }
 
 .Music .Music-container img {
