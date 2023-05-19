@@ -13,8 +13,12 @@ export default function Music() {
             <figure className="effect-text-one">
               <img src={img} alt="" />
               <figcaption>
-                <h3>Lorem <span>ipsum</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Your first  <span>guitar</span></h3>
+                <p>1. Acoustic or Electric
+                  2. Budget
+                  3. Playability
+                  4. Quality
+                  5. Size and Body Style</p>
               </figcaption>
             </figure>
           </div>
@@ -24,8 +28,18 @@ export default function Music() {
             <figure className="effect-text-one">
               <img src={img1} alt="" />
               <figcaption>
-                <h3>Lorem <span>ipsum</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>How to play the <span>guitar</span></h3>
+                <p>
+                  1. Get a guitar
+                  2. Learn guitar anatomy
+                  3. Tune your guitar
+                  4. Learn basic chords
+                  5. Practice strumming and picking
+                  6. Master chord progressions
+                  7. Explore fingerpicking techniques
+                  8. Study music theory
+                  9. Expand your chord vocabulary
+                  10. Practice regularly</p>
               </figcaption>
             </figure>
           </div>
