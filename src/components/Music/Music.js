@@ -9,8 +9,8 @@ export default function Music() {
       <h1>Music</h1>
       <div className="Music-container">
         <div className="info">
-          <div class="hover-text-one">
-            <figure class="effect-text-one">
+          <div className="hover-text-one">
+            <figure className="effect-text-one">
               <img src={img} alt="" />
               <figcaption>
                 <h3>Lorem <span>ipsum</span></h3>
@@ -20,8 +20,8 @@ export default function Music() {
           </div>
         </div>
         <div className="play">
-          <div class="hover-text-one">
-            <figure class="effect-text-one">
+          <div className="hover-text-one">
+            <figure className="effect-text-one">
               <img src={img1} alt="" />
               <figcaption>
                 <h3>Lorem <span>ipsum</span></h3>
