@@ -34,10 +34,9 @@
     grid-template-areas:
       "info"
       "play";
-
-    max-width: 400px;
-    margin: 0 auto;
     margin: 0 10px;
+		max-width: 500px;
+		width: 100%;
   }
 }
 
