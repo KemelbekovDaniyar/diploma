@@ -19,7 +19,6 @@ export default function CategoryList() {
     </li>
   ));
 
-
   return (
     <div className="CategoryList container">
       <h3>Categories</h3>

@@ -22,7 +22,7 @@ export default function Layout(props) {
           <NavToggle callback={toggleDrawer} />
           <Logo />
           <Nav />
-          <Drawer open={drawerOpen} toggle={toggleDrawer} />\
+          <Drawer open={drawerOpen} toggle={toggleDrawer} />
           <Search />
           <div>
             <CartLink />
