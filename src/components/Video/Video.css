@@ -15,7 +15,7 @@
 @media (max-width: 568px) {
   .video video {
     height: 300px;
-    max-width: 300px;
+    max-width: 4  00px;
     margin: 0 auto;
   }
 }
