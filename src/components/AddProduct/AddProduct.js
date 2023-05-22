@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AppContext } from "../../App";
 import { productsCollection, uploadProductPhoto } from "../../firebase";
 import { addDoc } from "firebase/firestore";
+import "./AddProduct.css";
 
 export default function AddProduct({ category }) {
   const { user } = useContext(AppContext);
@@ -64,9 +65,9 @@ export default function AddProduct({ category }) {
 
   return (
     <div className="AddProduct">
-      <form onSubmit={onFormSubmit}>
-        <h3>Create a new product</h3>
-        <label>
+      <form onSubmit={onFormSubmit} className="add-product-form">
+        <h3 className="add-product-heading">Create a new product</h3>
+        <label className="add-product-label">
           Name:
           <input
             type="text"
@@ -76,7 +77,7 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <label>
+        <label className="add-product-label">
           Price:
           <input
             type="number"
@@ -87,7 +88,7 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <label>
+        <label className="add-product-label">
           Picture:
           <input
             type="file"
@@ -96,7 +97,7 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <label>
+        <label className="add-product-label">
           Info:
           <input
             type="text"
@@ -106,7 +107,7 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <button type="submit" disabled={isSubmitting}>
+        <button type="submit" disabled={isSubmitting} className="add-product-button">
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
