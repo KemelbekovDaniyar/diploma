@@ -7,19 +7,19 @@ export default function Nav(props) {
       <nav className="topbar">
         <ul>
           <li className="NavItem">
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" className="underline-one">Home</NavLink>
           </li>
           <li className="NavItem">
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about" className="underline-one">About</NavLink>
           </li>
           <li className="NavItem">
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact" className="underline-one">Contact</NavLink>
           </li>
           <li className="NavItem">
-            <NavLink to="/deliver">Deliver</NavLink>
+            <NavLink to="/deliver" className="underline-one">Deliver</NavLink>
           </li>
           <li className="NavItem">
-            <NavLink to="/orders">Orders</NavLink>
+            <NavLink to="/orders" className="underline-one">Orders</NavLink>
           </li>
         </ul>
       </nav>
