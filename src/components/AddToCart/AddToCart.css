@@ -11,3 +11,8 @@
   background-color: #fff;
   color: #000;
 }
+
+.AddToCart svg {
+  width: 20px;
+  height: 20px;
+}
