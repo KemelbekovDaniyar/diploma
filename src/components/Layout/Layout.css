@@ -114,7 +114,7 @@ body {
 .Home .video {
   text-align: center;
   margin: 40px 0 40px 0;
-  height: calc(100vh - 90px);
+  height: calc(100vh -260px);
 }
 
 footer {
