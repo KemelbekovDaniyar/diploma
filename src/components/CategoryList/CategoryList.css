@@ -46,8 +46,14 @@
   border-radius: 10px;
 }
 
-.CategoryList img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  border-radius: 10px;
+@media (max-width: 768px) {
+  .CategoryList li {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .CategoryList img {
+    display: none;
+  }
 }

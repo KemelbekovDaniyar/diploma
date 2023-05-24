@@ -1,5 +1,5 @@
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { useContext } from "react";
 import { AppContext } from "../../App";
 import AddCategoryJs from "../AddCategoryJs/AddCategoryJs";
 import DeleteCategory from "../DeleteCategory/DeleteCategory";
@@ -11,7 +11,9 @@ export default function CategoryList() {
   const output = categories.map((category) => (
     <li key={category.id}>
       <NavLink to={`/categories/${category.slug}`}>
-        <img src={category.picture} alt={category.name} />
+        {window.innerWidth > 768 && (
+          <img src={category.picture} alt={category.name} />
+        )}
         <span>{category.name}</span>
       </NavLink>
 
