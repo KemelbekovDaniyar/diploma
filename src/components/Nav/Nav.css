@@ -21,6 +21,7 @@
   background-color: black;
   /* Цвет подчеркивания при исчезании линии*/
   transition: width 0.5s;
+  transition: 1s;
   /* Время эффекта */
 }
 

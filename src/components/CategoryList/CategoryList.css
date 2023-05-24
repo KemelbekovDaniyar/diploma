@@ -37,6 +37,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 15px;
+  transition: 1s;
 }
 
 .CategoryList img:hover {
