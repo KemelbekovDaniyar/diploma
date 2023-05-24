@@ -30,12 +30,15 @@
 
 @media screen and (max-width: 888px) {
   .Music .Music-container {
-    grid-template-columns: 1fr;
     grid-template-areas:
       "info"
       "play";
 		max-width: 500px;
 		width: 100%;
+		grid-template-columns: 1fr;
+		justify-content: center; 
+		align-items: center;
+		margin: 0 auto;
   }
 }
 
