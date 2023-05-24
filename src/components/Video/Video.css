@@ -5,17 +5,22 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
-  height: 570px;
+  height: calc(100vh - 110px);
 }
 
 .video video:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.video {
+  text-align: center;
+  height: 579px;
+}
+
 @media (max-width: 568px) {
   .video video {
     height: 450px;
-    max-width: 4  00px;
+    max-width: 4 00px;
     margin: 0 auto;
   }
 }

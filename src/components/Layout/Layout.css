@@ -76,7 +76,7 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1115px) {
   .Layout .spacer > .Nav,
   .spacer > .Search {
     display: none;
@@ -109,12 +109,6 @@ body {
     background-color: #222;
   }
 
-}
-
-.Home .video {
-  text-align: center;
-  margin: 40px 0 40px 0;
-  height: calc(100vh -260px);
 }
 
 footer {
