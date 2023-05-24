@@ -8,10 +8,13 @@
 
 .Auth {
   margin-left: 20px;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  justify-content: space-between;
 }
 
 .Auth button {
-  margin-top: 10px;
   border-radius: 5px;
   background-color: white;
   color: #222;
