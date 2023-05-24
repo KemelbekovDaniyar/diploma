@@ -34,7 +34,6 @@
     grid-template-areas:
       "info"
       "play";
-    margin: 0 10px;
 		max-width: 500px;
 		width: 100%;
   }
