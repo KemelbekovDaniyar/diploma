@@ -11,17 +11,19 @@
 }
 
 .Auth button {
-  display: block;
-  margin: auto;
   margin-top: 10px;
-  width: 100px;
-  height: 30px;
   border-radius: 5px;
   background-color: white;
   color: #222;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid white;
+}
+
+.Auth svg {
+  width: 20px;
+  height: 20px;
 }
 
 .Auth button:hover {
