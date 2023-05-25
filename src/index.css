@@ -80,6 +80,16 @@ code {
   margin: 0 auto;
 }
 
+.ThankYou {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ThankYou img {
+  width: 400px;
+  height: 400px;
+}
+
 @media screen and (max-width: 768px) {
   .Product {
     grid-template-areas: 
