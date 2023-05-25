@@ -91,6 +91,11 @@ code {
   height: 400px;
 }
 
+.Cart {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
   .Product {
     grid-template-areas: 
