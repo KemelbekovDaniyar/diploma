@@ -16,8 +16,8 @@ export default function ProductList({ category }) {
   const output = products.filter(product => product.category === category.id)
     .map(products => (
       <div key={products.id} className="BoxList">
-        <img src={products.picture} alt={products.name} />
         <NavLink to={'/products/' + products.slug} onClick={scrollToTop}>
+          <img src={products.picture} alt={products.name} />
           {products.name}
         </NavLink>
         <span>{products.price} $</span>
@@ -35,8 +35,8 @@ export default function ProductList({ category }) {
         <h1>{category.name}</h1>
         <div className="content">
           {output}
-          <AddProduct category={category} />
         </div>
+        <AddProduct category={category} />
       </div>
     </div>
   )

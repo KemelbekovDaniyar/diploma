@@ -71,6 +71,7 @@
 	background: #527c82;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 20px;
 }
 .hover-text-one figure img {
 	position: relative;
