@@ -28,6 +28,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  transition: 1s;
+}
+
+.CategoryList a:hover {
+  text-shadow: 0 0 5px black;
+  transition: 0.5s;
 }
 
 .CategoryList img {
@@ -41,7 +47,7 @@
 }
 
 .CategoryList img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
   border-radius: 10px;
 }
