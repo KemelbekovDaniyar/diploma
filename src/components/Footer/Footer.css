@@ -19,6 +19,7 @@
   text-decoration: none;
   color: #fff;
   transition: 0.5s;
+  display: flow-root;
 }
 
 .footer-heading {

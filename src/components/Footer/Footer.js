@@ -50,8 +50,20 @@ function Footer() {
           <h4 className="footer-heading">Contact</h4>
           <p>123 Music Street</p>
           <p>City, State</p>
-          <p>Phone: +996502019274</p>
-          <p>Email: kemelbekovdaniyar0@gmail.com</p>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            to="tel:+996 502 01 92 74"
+          >
+            +996 502 01 92 74
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            to="mailto:kemelbekovdaniyar0@gmail.com"
+          >
+            kemelbekovdaniyar0@gmail.com
+          </Link>
         </div>
         <div className="footer-column">
           <h4 className="footer-heading">Cellular Networks</h4>
