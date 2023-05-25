@@ -18,6 +18,7 @@
 .footer-column a {
   text-decoration: none;
   color: #fff;
+  transition: 0.5s;
 }
 
 .footer-heading {
@@ -45,6 +46,7 @@
   width: 40px;
   height: 40px;
   color: #fff;
+  transition: 0.5s;
 }
 
 .footer-list li:hover {
