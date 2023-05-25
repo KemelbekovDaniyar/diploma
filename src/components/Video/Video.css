@@ -18,8 +18,8 @@
 
 @media (max-width: 568px) {
   .video video {
-    height: 450px;
-    max-width: 4 00px;
+    height: 250px;
+    max-width: 400px;
     margin: 0 auto;
   }
 }
