@@ -1,6 +1,6 @@
 .Auth span {
   display: block;
-  margin-bottom: 10px;
+  margin-right: 10px;
   color: aliceblue;
   font-size: 1rem;
   font-weight: 400;
@@ -10,7 +10,6 @@
   margin-left: 20px;
   display: flex;
   align-items: center;
-  width: 220px;
   justify-content: space-between;
 }
 
