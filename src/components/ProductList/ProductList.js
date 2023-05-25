@@ -8,13 +8,16 @@ import DeleteProduct from "../DeleteProduct/DeleteProduct";
 import CategoryList from "../CategoryList/CategoryList";
 
 export default function ProductList({ category }) {
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   const { products } = useContext(AppContext);
 
   const output = products.filter(product => product.category === category.id)
     .map(products => (
       <div key={products.id} className="BoxList">
         <img src={products.picture} alt={products.name} />
-        <NavLink to={'/products/' + products.slug}>
+        <NavLink to={'/products/' + products.slug} onClick={scrollToTop}>
           {products.name}
         </NavLink>
         <span>{products.price} $</span>

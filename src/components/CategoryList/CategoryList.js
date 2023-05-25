@@ -6,11 +6,14 @@ import DeleteCategory from "../DeleteCategory/DeleteCategory";
 import "./CategoryList.css";
 
 export default function CategoryList() {
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   const { categories } = useContext(AppContext);
 
   const output = categories.map((category) => (
     <li key={category.id}>
-      <NavLink to={`/categories/${category.slug}`}>
+      <NavLink to={`/categories/${category.slug}`} onClick={scrollToTop}>
         {window.innerWidth > 768 && (
           <img src={category.picture} alt={category.name} />
         )}
