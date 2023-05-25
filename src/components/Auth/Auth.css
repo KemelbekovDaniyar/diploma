@@ -1,34 +1,33 @@
-.Auth span {
-  display: block;
-  margin-right: 10px;
-  color: aliceblue;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
 .Auth {
-  margin-left: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.Auth button {
-  border-radius: 5px;
-  background-color: white;
-  color: #222;
+.Auth .photoURL {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Auth .Sign {
+  border: none;
+  background-color: transparent;
+  color: white;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid white;
 }
 
-.Auth svg {
-  width: 20px;
-  height: 20px;
+.Auth .off {
+  color: rgba(255, 153, 153, 0.647);
 }
 
-.Auth button:hover {
-  background-color: #222;
-  color: white;
+.Auth .Sign:hover {
+  color: #777;
+}
+
+.Auth span {
+  display: flex;
+  align-items: center;
 }
