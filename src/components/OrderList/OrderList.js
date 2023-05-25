@@ -46,5 +46,7 @@ export default function OrderList() {
     );
   });
 
-  return <div className="OrderList">{output}</div>;
+  return <div className="OrderList">
+    {output}
+  </div>;
 }
